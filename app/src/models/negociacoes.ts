@@ -10,4 +10,8 @@ export class Negociacoes {
     public lista(): readonly Negociacao[] {
         return this.negociacoes;
     }
+
+    public paraTexto(): void {
+        console.log(JSON.stringify(this.negociacoes, null, 2));
+    }
 }
